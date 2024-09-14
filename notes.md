@@ -1,6 +1,6 @@
-#CS260 Notes
+# CS260 Notes
 
-**Github Commands:**
+## **Github Commands:**
 *Git Add* - stages the changes (modifications) so that they can be included in the next commit. *syntax* - git add myfile.txt
 
 *Git Commit* - Save the changes to the local repository with a message. *syntax* - git commit -m "Added myfile.txt"
