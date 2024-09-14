@@ -26,3 +26,7 @@ I am an English major, and many of my friends are also English majors, which has
 ## Poetry Portfolio Front Page Sketch
 ![Front Page sketch](PPSketch.png)
 
+## Poetry Portfolio Poem on Page Sketch
+![Poem Page Sketch](PoemSketch.png)
+This is very rough, and I will be brainstorming how to make it prettier. I was thinking if you clicked on the person's username it would take you to a collection of their stuff. They'd have the option to organize it and put it into folders, or they could just have all of their poems be buttons.
+
