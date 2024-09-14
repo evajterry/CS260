@@ -7,3 +7,8 @@ I am an English major, and many of my friends are also English majors, which has
 
 ## Poetry Portfolio Key Features
 
+- **Sign in/login:** *HTML* will structure the login page and sign-up page, *CSS* will style the form, *Javascript* will handle the submission and validation, and I'll need a database to keep track of the users. Maybe this database would be created with *SQL*.
+- **Voting/liking poems:** Voting on a poem would use *HTML* to create the like button at the end of a poem, *CSS* would style it, *JavaScript/React* would handle the user interactions with the button and update the UI to reflect the current number of likes. 
+- **Showing popular poems/sorting poems by tags:** *HTML* would create the basic layout for displaying poems and filtering options. *CSS* would style the poem listings, filters, and popular poem section. *JavaScript* would fetch and display poems from the backend, handle filtering by tags, and sort poems based on popularity. 
+
+
