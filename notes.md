@@ -18,3 +18,10 @@
 
 *Git Pull* - used to fetch and merge changes from a remote repository into your current local branch in one step. It brings your local branch up-to-date with the latest changes from the remote repository. If there are any conflicts during the merge, Git will ask you to resolve them before completing the pull.
 
+
+## Using Ubuntu
+
+*SSH* - Use the ssh console program to shell into your production environment server. *Syntax:* ssh -i Desktop/mcqueen.pem ubuntu@poetryportfolios.click
+
+*CaddyFile* - configuration file for the Caddy web server. *Commands:* :wq (w saves, q quits) *Restarting Caddy* - Restart Caddy so that your changes take effect. Note that this requires you to use sudo (super user do) to elevate your user to have the rights to restart the gateway. *syntax* - sudo service caddy restart
+
