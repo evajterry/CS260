@@ -25,3 +25,13 @@
 
 *CaddyFile* - configuration file for the Caddy web server. *Commands:* :wq (w saves, q quits) *Restarting Caddy* - Restart Caddy so that your changes take effect. Note that this requires you to use sudo (super user do) to elevate your user to have the rights to restart the gateway. *syntax* - sudo service caddy restart
 
+## HTML Notes
+
+Make sure to have something that will load quickly be the first thing on the website. 
+
+*Links:* Absolute and relative links. <a href="https://poetryportfolios.click/profiles">
+*Elements:* div (allows you to separate), span (vertical region inside of a span?), h<1-9> headers 1-9, p (paragraph), table, ol, ul (ordered and unordered list), a (anchor the text to a hyperlink), img, &, <, 
+
+w3schools.com -- <a href="https://www.w3schools.com/html/default.asp">
+
+
