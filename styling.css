@@ -9,7 +9,7 @@
     font-size: 5rem;
     color: rgb(2, 101, 2);
     text-align: center; /* Centers the h1 */
-    margin-top: 150px;
+    margin-top: 200px;
     transition: 0.5s; /* Smooth transition for hover effect */
   }
 
@@ -146,12 +146,13 @@
   display: flex;
   justify-content: center;
   gap: 20px; /* Optional: space between photos */
-  padding: 40px;
+  padding: 130px;
 }
 
 /* Style each photo container */
 .photo {
   position: relative;
+
   width: 400px; /* Adjust to your image size */
   height: 300px; /* Adjust to your image size */
   overflow: hidden;
@@ -166,7 +167,7 @@
 
 /* Create the overlay effect */
 .overlay {
-  position: absolute;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
@@ -187,7 +188,7 @@
 /* Style the quote text */
 .quote {
   color: white;
-  font-size: 1.5em;
+  font-size: 1.2em;
   text-align: center;
   padding: 10px;
 }
