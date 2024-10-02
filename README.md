@@ -30,3 +30,11 @@ I am an English major, and many of my friends are also English majors, which has
 ![Poem Page Sketch](PoemSketch.png)
 This is very rough, and I will be brainstorming how to make it prettier. I was thinking if you clicked on the person's username it would take you to a collection of their stuff. They'd have the option to organize it and put it into folders, or they could just have all of their poems be buttons.
 
+## HTML Deliverable
+For this deliverable, I built out the structure of my website using HTML.
+- [x] **HTML pages** - Eight HTML pages that represent the ability to login, search, view a profile, view folders (4), and learn about the site. 
+- [x] **Links** - The login page automatically links to the search page. The search page contains links to the about page and to your profile, which contains links to the folders.
+- [x] **Text** - There is quite a bit of text. For example, on the login page, I included quotes from famous poets about why poetry is important.
+- [X] **Images** - I included 6 images of poets on the login page. I think it could also be cool to have profile pictures on the profile page, but I'm not sure how to do that.
+- [x] **DB/Login** - Input box and submit button for login. 
+- [x] **WebSocket** - The count of likes a poem gets from certified accounts represents the tally of realtime votes.
