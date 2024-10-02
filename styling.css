@@ -99,6 +99,30 @@
     color: #333; /* Dark gray for text color */
   }
 
+  .long-quote {
+    font-size: 1.2rem;
+    background-image: linear-gradient(270deg, #4CAF50, #0098b3); /* Start with a gradient */
+    background-size: 200% 200%; /* Double the background size for animation */
+    padding: 20px;
+    text-align: center;
+    line-height: 1;
+    font-weight: bold;
+    color: white; /* Ensure text is visible */
+    animation: colorShift 7s ease infinite; /* Apply the animation */
+}
+
+  @keyframes colorShift {
+    0% {
+        background-position: 0% 50%; /* Start at the left */
+    }
+    50% {
+        background-position: 100% 50%; /* Move to the right */
+    }
+    100% {
+        background-position: 0% 50%; /* Return to the left */
+    }
+}
+
   footer {
     font-family: 'Times New Roman', serif;
     text-align: left;
@@ -146,7 +170,14 @@
   display: flex;
   justify-content: center;
   gap: 20px; /* Optional: space between photos */
-  padding: 130px;
+  padding: 50px;
+}
+
+.photo-gallery-second-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Optional: space between photos */
+  padding: 10px;
 }
 
 /* Style each photo container */
@@ -191,4 +222,8 @@
   font-size: 1.2em;
   text-align: center;
   padding: 10px;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
 }

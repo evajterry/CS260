@@ -21,7 +21,10 @@
         Poets are the unacknowledged legislators of the <br>
         world, according to Percy Shelley, <br>
         and as such, they should have a sufficient <br>
-        place to put their work.
+        place to put their work. <br> <br> <br> <br>
+      </div>
+      <div class="long-quote">
+        Read, write, revise, publish, share, discover. This is the place to unlock your inner poet. 
       </div>
 
       <!-- Navigation elements -->
@@ -60,17 +63,36 @@
     <div class="popup" id="createAccountPopup">
       <span class="close" onclick="hidePopups()">&times;</span>
       <h2>Create Account</h2>
-      <form method="get" action="createAccount.html">
-        <!-- Add fields for creating an account here -->
-        <div>
-          <span>@</span>
-          <input type="text" placeholder="your@email.com" />
+      <form method="get" action="search.html">
+          <!-- Add fields for creating an account here -->
+          <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" required>
         </div>
-        <div>
-          <span>🔒</span>
-          <input type="password" placeholder="password" />
+        <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" required>
         </div>
-        <button type="submit">Create Account</button>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+        <div class="form-group">
+            <label for="country">Country</label>
+            <select id="country" name="country" required>
+                <option value="">Select a country</option>
+                <option value="USA">United States</option>
+                <option value="CAN">Canada</option>
+                <option value="UK">United Kingdom</option>
+                <option value="AUS">Australia</option>
+                <!-- Add more country options as needed -->
+            </select>
+        </div>
+        <button type="submit" class="submit-btn">Submit</button>
       </form>
     </div>
 
@@ -115,11 +137,23 @@
               </div>
           </div>
       </div>
-      <div class="photo-gallery">
+      <div class="photo-gallery-second-row">
         <div class="photo">
           <img src="images/william wordsworth.png" alt="William Wordsworth">
           <div class="overlay">
               <p class="quote">Poetry is “the first and last of all knowledge—it is as immortal as the heart of man.” <br> <br> -William Wordsworth</p>
+          </div>
+        </div>
+        <div class="photo">
+          <img src="images/william-yeats.jpeg" alt="William Butler Yeats">
+          <div class="overlay">
+              <p class="quote">“We make out of the quarrel with others, rhetoric, but of the quarrel with ourselves, poetry.” <br> <br> -William Butler Yeats</p>
+          </div>
+        </div>
+        <div class="photo">
+          <img src="images/margaret-atwood.webp" alt="Margaret Atwood">
+          <div class="overlay">
+              <p class="quote">"I don’t think I solve problems in my poetry; I think I uncover the problems.” <br> <br> -Margaret Atwood</p>
           </div>
         </div>
       </div>
