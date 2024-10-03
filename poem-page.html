@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poem Display</title>
+    </head>
+<body>
+
+    <div class="poem-container">
+        <!-- Poem Content -->
+        <h1>Poem Title</h1>
+        <p>
+            Put the poem,<br>
+            Here somehow,<br>
+            Hopefully, this<br>
+            Doesn't break down
+        </p>
+
+        <!-- Poem Metadata -->
+        <div class="poem-meta">
+            <p>Author: <strong>Eva Terry</strong></p>
+            <p>Posted on: <strong>October 3, 2024</strong></p>
+        </div>
+
+        <!-- Tags Display -->
+        <div class="tags-container">
+            <h2>Tags:</h2>
+            <button class="tag-button">Nature</button>
+            <button class="tag-button">Love</button>
+            <button class="tag-button">Technology</button>
+        </div>
+
+        <!-- Likes Display with WebSocket -->
+        <div class="likes-container">
+            <p>Likes: <span id="likes-placeholder" class="placeholder"></span></p>
+        </div>
+
+        <button class="like-button" onclick="likePoem()">Like this poem</button>
+    </div>
+  
+</body>
+</html>
