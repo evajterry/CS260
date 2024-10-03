@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    width: 60%;
+    margin: 50px auto;
+}
+
+.placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.placeholder-box {
+    width: 50%;
+    height: 10px;
+    background-color: #e0e0e0;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        background-color: #e0e0e0;
+    }
+    50% {
+        background-color: #cfcfcf;
+    }
+    100% {
+        background-color: #e0e0e0;
+    }
+}
+
+.poem-container {
+    margin-top: 20px;
+}
+
+.user-details {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
