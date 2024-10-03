@@ -47,3 +47,21 @@ nav menu li a:hover {
       }
 }
 
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 600 px;
+}
+
+.search-box {
+    width: 80%;
+    padding: 15px 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
