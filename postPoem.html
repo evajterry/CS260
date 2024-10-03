@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post a Poem</title>
+    <link rel="stylesheet" href="style-poem-post.css">
+</head>
+<body>
+  <div class="container">
+      <h1>Share Your Poem</h1>
+
+      <!-- Form to post a poem -->
+      <form id="poem-form">
+          <textarea id="poem-content" placeholder="Write your poem here..." rows="6"></textarea><br>
+          <button type="submit">Post Poem</button>
+      </form>
+
+      <!-- Placeholder shown during upload -->
+      <div id="placeholder" class="placeholder" style="display:none;">
+          <div class="placeholder-box"></div>
+          <div class="placeholder-box"></div>
+          <p>Uploading your poem...</p>
+      </div>
+
+      <!-- Posted poem content -->
+      <div id="poem-container" class="poem-container" style="display:none;">
+          <h2>Your Poem:</h2>
+          <p id="posted-poem"></p>
+          <div class="user-details">
+              <p>Posted by: <span id="user-name"></span></p>
+          </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
