@@ -216,17 +216,16 @@ header p {
 /* Write Poem Section Styles */
 .write-poem-section {
     margin-top: 40px; /* Margin for separation */
+    align-content: center;
 }
 
 .write-poem-section h2 {
-    margin-bottom: 10px;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 #write-poem {
     padding: 10px 15px;
-    justify-content: center;
-    text-align: center;
     background-color: #026502; /* Blue background */
     color: white;
     border: none;

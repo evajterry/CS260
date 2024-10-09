@@ -1,5 +1,5 @@
 h1 {
-    font-size: 4rem;
+    font-size: 5rem;
     color: #026502;
     text-align: center; /* Centers the h1 */
     margin-top: 150px;
@@ -46,66 +46,37 @@ body {
     margin: 0;
     padding: 20px;
 }
+.button-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows buttons to wrap on small screens */
+    gap: 20px; /* Space between buttons */
+    justify-content: center; /* Center buttons in the container */
+}
 
-.poem-container {
-  width: 60%;
-  margin: 0 auto;
-}
-.poem-meta {
-    margin-bottom: 20px;
-    font-size: 14px;
-    color: #777;
-}
-.tags-container {
-    margin-top: 20px;
-}
-.tag-button {
-    display: inline-block;
-    padding: 8px 15px;
-    margin: 5px;
-    background-color: #f1f1f1;
-    border: 1px solid #ddd;
-    border-radius: 20px;
-    font-size: 14px;
-    cursor: pointer;
-    color: #555;
-}
-.tag-button:hover {
-    background-color: #ddd;
-}
-.likes-container {
-    margin-top: 30px;
-    font-size: 18px;
-    color: #333;
-}
-.like-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
+.square-button {
+    width: 200px; /* Square dimensions */
+    height: 200px;
+    background-color: white; /* White paper-like background */
+    border: 2px solid #026502; /* Green border */
+    border-radius: 10px; /* Slightly rounded corners for a paper-like effect */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow to give a raised effect */
+    color: #026502; /* Green text color */
     font-size: 16px;
-    border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-.placeholder {
-    display: inline-block;
-    width: 50px;
-    height: 20px;
-    background-color: #e0e0e0;
-    border-radius: 5px;
-    animation: pulse 1.5s infinite;
+
+.square-button:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
 }
-@keyframes pulse {
-    0% {
-        background-color: #e0e0e0;
-    }
-    50% {
-        background-color: #cfcfcf;
-    }
-    100% {
-        background-color: #e0e0e0;
-    }
+
+.square-button:active {
+    transform: translateY(0); /* Button returns to original position when clicked */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Revert shadow */
 }
 
 
