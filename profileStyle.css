@@ -1,42 +1,240 @@
 h1 {
     font-size: 5rem;
-    color: rgb(2, 101, 2);
+    color: #026502;
     text-align: center; /* Centers the h1 */
     margin-top: 150px;
 }
 
+/* Style for the navigation menu */
 nav {
-    background-color: #a4b79b;
-    padding: 10px 0;
-    position: fixed;
-    top: 0;
-    width: 100;
-    z-index: 1000;
+    background-color: #608f60; /* Background color for the nav */
+    width: 100%; /* Full width */
+    position: relative; /* To position child elements if needed */
 }
 
-nav menu {
-    list-style-type: none;
+/* Style for the menu */
+menu {
+    display: flex; /* Use flexbox to distribute menu items */
+    justify-content: space-around; /* Space items evenly across the width */
+    padding: 10px 0; /* Vertical padding */
+    list-style: none; /* Remove default list styling */
+    margin: 0; /* Remove default margin */
+}
+
+/* Style for individual menu items */
+menu li {
+    flex: 1; /* Allow items to grow and fill space */
+    text-align: center; /* Center text */
+}
+
+/* Style for links */
+menu a {
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline from links */
+    padding: 10px; /* Add padding for a larger clickable area */
+    display: block; /* Make the entire area of the link clickable */
+}
+
+/* Hover effect for links */
+menu a:hover {
+    background-color: #026502; /* Change background color on hover */
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f5f5f5; /* Light background for contrast */
     margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
+    padding: 20px;
 }
 
-nav menu li {
-    margin: 0 15px;
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff; /* White background for the container */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
-nav menu li a:hover {
-    background-color: #45a049;
+header {
+    padding: 40px;
+    text-align: center; /* Center the header text */
+    margin-bottom: 20px;
 }
 
-/* Make sure it looks good on mobile screens */
-@media (max-width: 600px) {
-    nav menu {
-      flex-direction: column;
-      align-items: center;
-    }
-    nav menu li {
-        margin: 10px 0;
-      }
+header h1 {
+    font-size: 2em; /* Larger font size for the title */
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em; /* Slightly larger font size for welcome message */
+}
+
+/* Bio Section Styles */
+.bio-section {
+    margin-bottom: 20px;
+}
+
+.bio-section h2 {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#bio {
+    width: 100%; /* Full width of the section */
+    padding: 10px; /* Padding for the textarea */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    resize: none; /* Prevent resizing */
+}
+
+#save-bio {
+    padding: 10px 15px;
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition for hover effect */
+}
+
+#save-bio:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Folders Section Styles */
+.folders-section {
+    margin-bottom: 20px;
+}
+
+.folders-section h2 {
+    margin-bottom: 10px;
+}
+
+/* Folder Styles */
+#folders-container {
+    display: flex; /* Flexbox for a responsive layout */
+    flex-wrap: wrap; /* Allow wrapping to next line */
+    gap: 15px; /* Space between folders */
+    justify-content: center; /* Center align the folders */
+}
+
+.folder {
+    width: 150px; /* Fixed width for folders */
+    background-color: #608f60; /* Light yellowish background for folders */
+    padding: 15px 10px 10px; /* Padding for folder */
+    border-radius: 4px; /* Slightly rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    position: relative; /* Positioning for the pseudo-element */
+    text-align: center; /* Center the text in folders */
+}
+
+.folder h3 {
+    margin: 0; /* Remove margin for folder title */
+    font-size: 1.2em; /* Slightly larger font size */
+    text-align: left; /* Align text to the left */
+}
+
+/* Creating the folder tab */
+.folder::before {
+    content: ''; /* Empty content for the pseudo-element */
+    position: absolute;
+    top: -10px; /* Position above the folder */
+    left: 10px; /* Position slightly from the left */
+    width: 130px; /* Width of the tab */
+    height: 15px; /* Height of the tab */
+    background-color: #2b412b; /* Color of the folder tab */
+    border-radius: 3px 3px 0 0; /* Rounded top corners */
+}
+
+/* Button Styles for Folder View */
+.view-folder {
+    padding: 5px 10px; /* Smaller padding for the button */
+    background-color: #375237; /* Blue background */
+    color: white;
+    border: none;
+    border-radius: 50px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition for hover effect */
+    margin-top: 10px; /* Space between the title and button */
+}
+
+.view-folder:hover {
+    background-color: #375237; /* Darker blue on hover */
+}
+
+
+.folder h3 {
+    margin: 0 0 10px; /* Margin for folder title */
+}
+
+.view-folder {
+    padding: 8px 10px;
+    background-color: #223222; /* Blue background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition for hover effect */
+}
+
+
+.view-folder:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* New Folder Button */
+#new-folder {
+    padding: 10px 15px;
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition for hover effect */
+}
+
+#new-folder:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Write Poem Section Styles */
+.write-poem-section {
+    margin-top: 20px; /* Margin for separation */
+}
+
+.write-poem-section h2 {
+    margin-bottom: 10px;
+}
+
+#write-poem {
+    padding: 10px 15px;
+    background-color: #026502; /* Blue background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition for hover effect */
+}
+
+#write-poem:hover {
+    background-color: #013901; /* Darker blue on hover */
+}
+
+/* Post Poem Link Styles */
+.post-poem {
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    text-decoration: none; /* No underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Transition for hover effect */
+}
+
+.post-poem:hover {
+    background-color: #45a049; /* Darker green on hover */
 }

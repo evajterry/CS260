@@ -8,9 +8,6 @@
     <link rel="stylesheet" href="profileStyle.css" />
   </head>
   <body>
-    <header>
-      <h1>User's Name</h1> <!-- I want this to be whatever the name registered is-->
-
       <nav>
         <menu>
           <li><a href="index.html">Login</a></li>
@@ -20,21 +17,50 @@
           <li><a href="about.html">About</a></li>
         </menu>
       </nav>
-      
-      <hr />
-    </header>
     <div class="user-description">
-      
+      <header>
+        <h1>User Profile</h1>
+        <p>Welcome, <span id="user-name">[Username]</span></p>
+    </header>
+    <section class="bio-section">
+      <h2>About Me</h2>
+      <textarea id="bio" placeholder="Write a short bio about yourself..." rows="4"></textarea>
+      <button id="save-bio">Save Bio</button>
+    </section>
     </div>
-    <div class="button-container">
+    <section class="folders-section">
+      <h2>Poetry Folders</h2>
+      <div id="folders-container">
+          <!-- Example folder structure -->
+          <div class="folder">
+              <h3>Love Poems</h3>
+              <button class="view-folder">View Folder</button>
+          </div>
+          <div class="folder">
+              <h3>Nature Poems</h3>
+              <button class="view-folder">View Folder</button>
+          </div>
+          <div class="folder">
+              <h3>Inspirational Poems</h3>
+              <button class="view-folder">View Folder</button>
+          </div>
+          <!-- Add more folders as needed -->
+      </div>
+      <button id="new-folder">Create New Folder</button>
+  </section>
+  <section class="write-poem-section">
+    <h2>Write a New Poem</h2>
+    <button id="write-poem" onclick="location.href='postPoem.html'">Go to Write Poem</button>
+  </section>
+<script src="script-profile.js"></script> <!-- Link to your JavaScript file -->
+    <!-- <div class="button-container">
       <a href="folder1.html" class="square-button">Folder1 - nature</a>
       <a href="folder2.html" class="square-button">Folder2 - family</a>
       <a href="folder3.html" class="square-button">Folder3 - sonnets</a>
       <a href="folder4.html" class="square-button">Folder4 - love</a>
-    </div>
-    <a href="postPoem.html" class="post-poem">Upload a poem</a>
-    <footer>
-      <hr />
+    </div> -->
+    <a href="postPoem.html" class="post-poem">Upload a poem</a> <br/> <br/> <br/>
+    <footer></footer> 
       <span class="text-reset">Author Name(s)</span>
       <br />
       <a href="https://github.com/evajterry/CS260">GitHub</a>
