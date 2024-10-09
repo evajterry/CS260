@@ -9,7 +9,7 @@ Basic reset for padding/margin
     font-size: 5rem;
     color: #026502;
     text-align: center; /* Centers the h1 */
-    margin-top: 200px;
+    margin-top: 180px;
     transition: 0.5s; /* Smooth transition for hover effect */
   }
 
@@ -23,7 +23,6 @@ Basic reset for padding/margin
     background-size: 200% auto;
     color: #0098b3;
     background-clip: text;
-    text-fill-color: transparent;
     animation: shimmer 2s linear infinite;
   }
 

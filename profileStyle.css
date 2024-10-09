@@ -74,6 +74,9 @@ header p {
 /* Bio Section Styles */
 .bio-section {
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .bio-section h2 {
@@ -82,16 +85,20 @@ header p {
 }
 
 #bio {
-    width: 100%; /* Full width of the section */
+    display: flex; /* Use flexbox to distribute menu items */
+    justify-content: center;
+    align-items: center; 
+    width: 30%; 
+    height: 100%;
     padding: 10px; /* Padding for the textarea */
     border: 1px solid #ccc; /* Light border */
     border-radius: 4px; /* Rounded corners */
-    resize: none; /* Prevent resizing */
+    resize: none; 
 }
 
 #save-bio {
     padding: 10px 15px;
-    background-color: #4CAF50; /* Green background */
+    background-color: #026502; /* Green background */
     color: white; /* White text */
     border: none;
     border-radius: 5px;
@@ -100,11 +107,12 @@ header p {
 }
 
 #save-bio:hover {
-    background-color: #45a049; /* Darker green on hover */
+    background-color: #026502; /* Darker green on hover */
 }
 
 /* Folders Section Styles */
 .folders-section {
+    margin-top: 50px;
     margin-bottom: 20px;
 }
 
@@ -179,15 +187,14 @@ header p {
     transition: background-color 0.3s ease; /* Transition for hover effect */
 }
 
-
 .view-folder:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #074e07; /* Darker blue on hover */
 }
 
 /* New Folder Button */
 #new-folder {
     padding: 10px 15px;
-    background-color: #4CAF50; /* Green background */
+    background-color: #026502; /* Green background */
     color: white; /* White text */
     border: none;
     border-radius: 5px;
@@ -196,12 +203,12 @@ header p {
 }
 
 #new-folder:hover {
-    background-color: #45a049; /* Darker green on hover */
+    background-color: rgb(29, 67, 30); /* Darker green on hover */
 }
 
 /* Write Poem Section Styles */
 .write-poem-section {
-    margin-top: 20px; /* Margin for separation */
+    margin-top: 40px; /* Margin for separation */
 }
 
 .write-poem-section h2 {
@@ -228,7 +235,7 @@ header p {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 15px;
-    background-color: #4CAF50; /* Green background */
+    background-color: #026502; /* Green background */
     color: white; /* White text */
     text-decoration: none; /* No underline */
     border-radius: 5px; /* Rounded corners */
@@ -236,5 +243,35 @@ header p {
 }
 
 .post-poem:hover {
-    background-color: #45a049; /* Darker green on hover */
+    background-color: #024102; /* Darker green on hover */
+}
+
+footer {
+    text-align: center; /* Center the footer content */
+    margin-top: 30px; /* Add spacing above the footer */
+    padding: 50px;
+    background-color: #f5f5f5; /* Light background color */
+}
+
+footer .text-reset {
+    color: #000; /* Text color for 'Designed by Eva Terry' */
+    display:block;
+    font-size: 1.2em;
+}
+
+footer small_button {
+    margin-top: 1px;
+    padding: 10px 20px; /* Add padding for a larger button */
+    background-color: #333; /* Dark background color */
+    color: white; /* White text */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    font-size: 1em; /* Slightly larger font for readability */
+    margin-top: 10px; /* Spacing above the button */
+}
+
+footer small_button:hover {
+    background-color: #555; /* Slightly lighter background on hover */
 }

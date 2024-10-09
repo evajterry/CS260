@@ -19,7 +19,7 @@ body {
 
 /* Style for the navigation menu */
 nav {
-    background-color: #026502; /* Background color for the nav */
+    background-color: #608f60; /* Background color for the nav */
     width: 100%; /* Full width */
     position: relative; /* To position child elements if needed */
 }
@@ -49,7 +49,7 @@ menu a {
 
 /* Hover effect for links */
 menu a:hover {
-    background-color: #3187b3; /* Change background color on hover */
+    background-color: #026502; /* Change background color on hover */
 }
 
 .search-container {
@@ -102,4 +102,3 @@ menu a:hover {
     background-color: #ddd;
     border-color: #999;
   }
-
