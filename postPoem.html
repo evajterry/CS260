@@ -5,15 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Post a Poem</title>
     <link rel="stylesheet" href="style-poem-post.css">
+    <link rel="icon" href="logo.ico" />
 </head>
 <body>
+    <header>
+        <nav>
+            <menu>
+              <li><a href="index.html">Login</a></li>
+              <li><a href="createAccount.html">Create Account</a></li>
+              <li><a href="search.html">Search</a></li>
+              <li><a href="profile.html">Profile</a></li>
+              <li><a href="about.html">About</a></li>
+            </menu>
+          </nav>
+    </header>
   <div class="container">
       <h1>Share Your Poem</h1>
 
       <!-- Form to post a poem -->
       <form id="poem-form">
-          <textarea id="poem-content" placeholder="Write your poem here..." rows="6"></textarea><br>
-          <button type="submit">Post Poem</button>
+        <!-- Text box for poem title -->
+        <input type="text" id="poem-title" aria-label="Poem Title" placeholder="Enter the title of your poem" required><br>
+        <!-- Textarea for poem content -->
+        <textarea id="poem-content" aria-label="Poem content" placeholder="Write your poem here..." rows="20" required></textarea><br>
+          
+        <button type="submit"><span>Post Poem</span></button>
       </form>
 
       <!-- Placeholder shown during upload -->

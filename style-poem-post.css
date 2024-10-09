@@ -1,45 +1,168 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
 }
 
 .container {
-    width: 60%;
+    max-width: 800px;
     margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: vertical;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #026502; /* Initial solid color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    position: relative; /* Required for the pseudo-element */
+    overflow: hidden; /* Prevent overflow of the pseudo-element */
+}
+
+button[type="submit"]::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%; /* Start off-screen to the left */
+    width: 100%;
+    height: 100%;
+    background-color: #3187b3; /* Final solid color on hover */
+    transition: left 0.5s ease; /* Smooth transition to the right */
+    z-index: 0; /* Behind the button text */
+}
+
+button[type="submit"]:hover::after {
+    left: 0; /* Move to the right on hover */
+}
+
+button[type="submit"] span {
+    position: relative; /* Position relative to the button */
+    z-index: 1; /* Ensure text is above the pseudo-element */
+}
+
+/* Placeholder Styles */
 .placeholder {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
+    text-align: center;
+    color: #666;
 }
 
 .placeholder-box {
-    width: 50%;
-    height: 10px;
-    background-color: #e0e0e0;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    background-color: #ccc;
+    border-radius: 50%;
     animation: pulse 1.5s infinite;
-}
-
-@keyframes pulse {
+}@keyframes pulse {
     0% {
-        background-color: #e0e0e0;
+        transform: scale(1);
+        opacity: 1;
     }
     50% {
-        background-color: #cfcfcf;
+        transform: scale(1.1);
+        opacity: 0.7;
     }
     100% {
-        background-color: #e0e0e0;
+        transform: scale(1);
+        opacity: 1;
     }
 }
 
+/* Posted Poem Styles */
 .poem-container {
-    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #eee;
+    background-color: #f9f9f9;
+}
+
+.poem-container h2 {
+    color: #333;
+    font-size: 24px;
+}
+
+#posted-poem {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 20px;
 }
 
 .user-details {
-    margin-top: 10px;
     font-size: 14px;
-    color: #555;
+    color: #888;
+}
+
+.user-details span {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Reset default margin and padding for the body */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the navigation menu */
+nav {
+    background-color: #608f60; /* Background color for the nav */
+    width: 100%; /* Full width */
+    position: relative; /* To position child elements if needed */
+}
+
+/* Style for the menu */
+menu {
+    display: flex; /* Use flexbox to distribute menu items */
+    justify-content: space-around; /* Space items evenly across the width */
+    padding: 10px 0; /* Vertical padding */
+    list-style: none; /* Remove default list styling */
+    margin: 0; /* Remove default margin */
+}
+
+/* Style for individual menu items */
+menu li {
+    flex: 1; /* Allow items to grow and fill space */
+    text-align: center; /* Center text */
+}
+
+/* Style for links */
+menu a {
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline from links */
+    padding: 10px; /* Add padding for a larger clickable area */
+    display: block; /* Make the entire area of the link clickable */
+}
+
+/* Hover effect for links */
+menu a:hover {
+    background-color: #026502; /* Change background color on hover */
 }
