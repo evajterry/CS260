@@ -38,3 +38,12 @@ For this deliverable, I built out the structure of my website using HTML.
 - [X] **Images** - I included 6 images of poets on the login page. I think it could also be cool to have profile pictures on the profile page, but I'm not sure how to do that.
 - [x] **DB/Login** - Input box and submit button for login. 
 - [x] **WebSocket** - The count of likes a poem gets from certified accounts represents the tally of realtime votes.
+
+## CSS Deliverable
+For this deliverable, I made all of my website's HTML pretty using CSS. This is what I did specifically:
+- [x] **Flex** - I used CSS flex to make sure my website adjusts to different window sizes, ensuring that buttons, folders, and all content are visible regardless of the size of the screen. Every page is responsive to window resizing
+- [x] **Headers and footers** - I included properly styled CSS headers, footers, and main content body on all pages where it was appropriate. I also adjusted the header to not include whatever page the user was on.
+- [x] **Styled navigation buttons** - I also included properly styled CSS navigation elements. One button I am particularly proud of (that probably took way too long to execute) is the button on the post poem page. Take a look if you so desire. All other buttons turn a different shade when hovered over and adjust positions depending on the window size.
+- [x] **Properly styled elements** - On my front page, I have a bar that fades from blue to green on a gradient. Additionally, the main h1 header on the front page turns blue when you hover over it. There are quite a few fun little uses of active CSS on my website.
+- [x] **Text content** - My website is a poetry sharing platform, so there is a lot of text that I had to style. There are a couple of different spots where I used CSS to style editable textboxes (bio section on the profile page and the poem submission page). I also had to use CSS to style the main poems themselves.
+- [x] **Images** - I used properly styled CSS application images on the front page. I thought it would be cool to have pictures of accomplished poets and what they've said about poetry. So, I used CSS to make it so when you hover over the images, it changed to a grey overlay with the quote in white. 
