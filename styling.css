@@ -4,7 +4,7 @@ Basic reset for padding/margin
     padding: 0;
     box-sizing: border-box;
   }
-  
+
   h1 {
     font-size: 5rem;
     color: #026502;
