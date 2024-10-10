@@ -1,103 +1,9 @@
-h1 {
-    text-align: center;
-    color: #333;
-}
-body {
-    font-family: 'Arial', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #f9f9f9;
-    margin: 0;
-}
-
-.poem-container {
-    max-width: 600px;
+header {
+    position: relative;
+    top: 0;
     width: 100%;
-    background-color: #c3c3c3;
-    padding: 20px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    margin: 20px;
 }
 
-/* Poem Title */
-.poem-container h1 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-/* Poem Text */
-.poem-container p {
-    background-color: #f0f0f0; /* Light grey background */
-    padding: 20px;
-    border-radius: 10px;
-    line-height: 1.5;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 10px;
-}
-
-/* Poem Metadata */
-.poem-meta {
-    margin-top: 20px;
-    font-size: 0.9em;
-    color: #555;
-}
-
-.poem-meta p {
-    margin: 5px 0;
-}
-
-/* Tags Section */
-.tags-container {
-    margin-top: 30px;
-}
-
-.tags-container h2 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-
-.tag-button {
-    background-color: #026502; /* Green background */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 15px;
-    margin: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.tag-button:hover {
-    background-color: #013901; /* Darker green on hover */
-}
-
-/* Likes Section */
-.likes-container {
-    margin-top: 20px;
-}
-
-.placeholder {
-    font-weight: bold;
-}
-
-/* Like Button */
-.like-button {
-    background-color: #026502; /* Green background */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 15px;
-    margin-top: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.like-button:hover {
-    background-color: #013901; /* Darker green on hover */
-}
 /* Style for the navigation menu */
 nav {
     background-color: #608f60; /* Background color for the nav */
@@ -107,30 +13,94 @@ nav {
 
 /* Style for the menu */
 menu {
-    display: flex; /* Use flexbox to distribute menu items */
-    justify-content: space-around; /* Space items evenly across the width */
-    padding: 10px 0; /* Vertical padding */
-    list-style: none; /* Remove default list styling */
-    margin: 0; /* Remove default margin */
+    display: flex; 
+    justify-content: space-around; 
+    padding: 10px 0; 
+    list-style: none; 
+    margin: 0; 
 }
 
 /* Style for individual menu items */
 menu li {
-    flex: 1; /* Allow items to grow and fill space */
-    text-align: center; /* Center text */
+    flex: 1; 
+    text-align: center;
 }
 
 /* Style for links */
 menu a {
-    color: white; /* Text color */
-    text-decoration: none; /* Remove underline from links */
-    padding: 10px; /* Add padding for a larger clickable area */
-    display: block; /* Make the entire area of the link clickable */
+    color: white; 
+    text-decoration: none; 
+    padding: 10px; 
+    display: block; 
 }
 
 /* Hover effect for links */
 menu a:hover {
-    background-color: #026502; /* Change background color on hover */
+    background-color: #026502; 
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+}
+
+.poem-container {
+    width: 70%; /* Take up most of the screen */
+    max-width: 800px; /* Max width to avoid overly large boxes */
+    background-color: #f0f0f0; /* Light grey background for the poem box */
+    padding: 40px;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center; /* Center the text */
+    margin: 20px auto;
+}
+
+/* Poem Title */
+.poem-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Poem Text */
+.poem-container p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Poem Metadata (Author and Date) */
+.poem-meta {
+    font-size: 0.9em; /* Smaller font size */
+    color: #555; /* Subtle grey color for the text */
+    margin-bottom: 30px;
+}
+
+/* Tags Section */
+.tags-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between buttons */
+    margin-top: 20px;
+}
+
+.tag-button {
+    font-size: 0.7em; /* Small font size for tiny buttons */
+    padding: 5px 10px;
+    background-color: #026502; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tag-button:hover {
+    background-color: #013901; /* Darker green on hover */
 }
 
 

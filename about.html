@@ -5,47 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>about</title>
     <link rel="icon" href="logo.ico" />
+    <link rel="stylesheet" href="aboutStyle.css" />
   </head>
-  <body>
     <header>
-      <h1>Poetry Portfolio<sup>&reg;</sup></h1>
-
       <nav>
+        <!-- Menu is a semantic alternative to <ul> that represents an interaction -->
         <menu>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="createAccount.html">Create Account</a></li>
+          <li><a href="index.html">Log out</a></li>
+          <!-- <li><a href="createAccount.html">Create Account</a></li> -->
           <li><a href="search.html">Search</a></li>
           <li><a href="profile.html">Profile</a></li>
-          <li><a href="about.html">About</a></li>
+          <!-- <li><a href="about.html">About</a></li> -->
         </menu>
       </nav>
-
-      <hr />
     </header>
-
+    <h1>Poetry Portfolio<sup>&reg;</sup></h1>
+    <body>
     <main>
-      <div id="picture" class="picture-box"><img width="400px" src="images/placeholder.jpg" alt="random" /></div>
-
+      <div id="picture" class="picture-box"><img width="400px" src="images/yosemite.png" alt="yosemite" /></div>
+      <div id="picture" class="picture-box1"><img width="400px" src="images/zion.png" alt="zion" /></div>
       <p>
-        Poetry Portfolio is a public platform where you can share and keep track of your poetry. You can include tags for your own poetry, 
-        and you can search tags, poems, and poets. Please only upload your own work.
+        Poetry is as immortal as the heart of man (@Wordsworth), and honestly, people don't read it like they used to. For me, 
+        poetry helps me feel in my heart that places like the ones in these pictures exist even when I'm not there. <br/><br/>
+        To try and help poetry be more accessible, I built this website. Here you can share and keep track of everything you
+        write. Whether it's all breakup poetry or all haikus, it's welcome here. So please enjoy. 
       </p>
 
-      <p>
-        The name Poetry Portfolio is a registered trademark of Milton-Bradley. No part of this code or program should be used outside of that definition.
-      </p>
-
-      <div id="quote">
-        <div>A poem is a large (or small) machine made of words.</div>
-        <div>- William Carlos Williams</div>
-      </div>
     </main>
 
     <footer>
-      <hr />
-      <span class="text-reset">Eva's Github</span>
+      <span class="text-reset">Designed by Eva Terry</span>
       <br />
-      <a href="https://github.com/webprogramming260/simon-html">GitHub</a>
+      <small_button type="small_button" onclick="window.location.href='https://github.com/evajterry/CS260';">GitHub</small_button>
     </footer>
   </body>
 </html>
