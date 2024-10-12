@@ -17,39 +17,34 @@ body {
     padding: 0;
 }
 
-/* Style for the navigation menu */
 nav {
-    background-color: #608f60; /* Background color for the nav */
-    width: 100%; /* Full width */
-    position: relative; /* To position child elements if needed */
+    background-color: #608f60; 
+    width: 100%; 
+    position: relative; 
 }
 
-/* Style for the menu */
 menu {
-    display: flex; /* Use flexbox to distribute menu items */
-    justify-content: space-around; /* Space items evenly across the width */
-    padding: 10px 0; /* Vertical padding */
-    list-style: none; /* Remove default list styling */
-    margin: 0; /* Remove default margin */
+    display: flex; 
+    justify-content: space-around; 
+    padding: 10px 0; 
+    list-style: none; 
+    margin: 0; 
 }
 
-/* Style for individual menu items */
 menu li {
-    flex: 1; /* Allow items to grow and fill space */
-    text-align: center; /* Center text */
+    flex: 1; 
+    text-align: center; 
 }
 
-/* Style for links */
 menu a {
-    color: white; /* Text color */
-    text-decoration: none; /* Remove underline from links */
-    padding: 10px; /* Add padding for a larger clickable area */
-    display: block; /* Make the entire area of the link clickable */
+    color: white; 
+    text-decoration: none; 
+    padding: 10px; 
+    display: block; 
 }
 
-/* Hover effect for links */
 menu a:hover {
-    background-color: #026502; /* Change background color on hover */
+    background-color: #026502; 
 }
 
 .search-container {
@@ -102,3 +97,34 @@ menu a:hover {
     background-color: #ddd;
     border-color: #999;
   }
+
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 50px;
+    background-color: #f5f5f5; 
+}
+
+footer .text-reset {
+    color: #000; /* Text color for 'Designed by Eva Terry' */
+    display:block;
+    font-size: 1.2em;
+}
+
+footer small_button {
+    margin-top: 1px;
+    padding: 10px 20px; 
+    background-color: #333; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+    font-size: 1em; 
+    margin-top: 10px; 
+}
+
+footer small_button:hover {
+    background-color: #555; 
+}

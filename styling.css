@@ -38,7 +38,7 @@ Basic reset for padding/margin
   button {
     text-align: center;
     
-    background-color: #4CAF50; /* Green background */
+    background-color: #2e7530; /* Green background */
     color: white; /* White text */
     font-size: 16px; /* Set font size */
     padding: 10px 20px; /* Add padding to the button */
@@ -52,7 +52,7 @@ Basic reset for padding/margin
   }
 
   button:hover {
-    background-color: #0098b3; /* Darker green on hover */
+    background-color: #007185; /* Darker green on hover */
     transform: scale(1.05); /* Slightly enlarge the button */
   }
 
@@ -167,6 +167,7 @@ Basic reset for padding/margin
   /* Ensure the photo gallery is centered */
 .photo-gallery {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 20px; /* Optional: space between photos */
   padding: 50px;
@@ -174,6 +175,7 @@ Basic reset for padding/margin
 
 .photo-gallery-second-row {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 20px; /* Optional: space between photos */
   padding: 10px;
