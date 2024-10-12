@@ -5,30 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Scores</title>
     <link rel="icon" href="logo.ico" />
+    <link rel="stylesheet" href="folderStyle.css" />
   </head>
   <body>
     <header>
-      <h1>Sonnets</h1> <!-- I want this to be whatever they name the folder-->
-
       <nav>
         <menu>
-          <li><a href="profile.html">Return to profile</a></li>
+          <li><a href="index.html">Log out</a></li>
+          <!-- <li><a href="createAccount.html">Create Account</a></li> -->
           <li><a href="search.html">Search</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="about.html">About</a></li>
         </menu>
       </nav>
       
     </header>
+    <h1>Sonnets</h1> <!-- I want this to be whatever they name the folder-->
     <div class="button-container">
-        <button class="square-button">Poem 1</button>
-        <button class="square-button">Poem 2</button>
-        <button class="square-button">Poems 3</button>
-        <button class="square-button">Poems 4</button>
-    </div>
+      <button class="square-button" onclick="location.href='poem-page.html'">Poem 1</button>
+      <button class="square-button" onclick="location.href='poem-page.html'">Poem 2</button>
+      <button class="square-button" onclick="location.href='poem-page.html'">Poem 3</button>
+      <button class="square-button" onclick="location.href='poem-page.html'">Poem 4</button>
+  </div>
     <footer>
-      <hr />
-      <span class="text-reset">Author Name(s)</span>
+      <span class="text-reset">Designed by Eva Terry</span>
       <br />
-      <a href="https://github.com/evajterry/CS260">GitHub</a>
+      <small_button type="small_button" onclick="window.location.href='https://github.com/evajterry/CS260';">GitHub</small_button>
     </footer>
   </body>
 </html>
