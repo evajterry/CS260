@@ -30,10 +30,6 @@
 Make sure to have something that will load quickly be the first thing on the website. 
 
 *Links:* Absolute and relative links. <a 'href="https://poetryportfolios.click/profiles">' 
-'#title {color: blue;}
-'<div class="grid">Content 1</div>'
-'<div class="grid">Content 2</div>'
-'.grid {display: grid;}'
 
 
 ## Midterm Notes
@@ -41,7 +37,67 @@ Make sure to have something that will load quickly be the first thing on the web
 **#title vs .grid:** The # selector targets an element with a specific ID, while the .grid (.) selector targets elements with a specific class. 
 Code examples: 
 <h1 id="title">Welcome</h1>
+#title {color: blue;}
+<div class="grid">Content 1</div>
+<div class="grid">Content 2</div>
+.grid {display: grid;}**#title vs .grid:**
 
+The `#` selector targets an element with a specific ID, while the `.grid` (`.`) selector targets elements with a specific class.
+
+**Code examples:**
+
+```html
+<h1 id="title">Welcome</h1>
+
+#title {
+  color: blue;
+}
+
+<div class="grid">Content 1</div>
+<div class="grid">Content 2</div>
+
+.grid {
+  display: grid;
+}
+```
+**Padding vs Margin:**
+Padding is space inside the element between the content and the border, and margin is space outside the element, between the border and surrounding elements. 
+
+**Flex rules:**
+*1) Flex Direction*
+[]row: horizontal (default)
+[]row-reverse: horizontal but reversed
+[]column: vertical
+[]column-reverse: vertical but reversed
+
+*2) Justify Content*
+[]flex-start: align items to start
+[]flex-end: align items to end
+[]center: align items to center
+[]space-between: evenly distribute items with space between
+[]space-around: space around items including edges
+
+**Arrow Syntax Declaration:**
+*Characteristics* - if the function body is a single expression, omit curly braces and return keyword - the result is automatically returned. 
+
+```javascript
+const square = x => x * x;
+console.log(square(5));  // Output: 25
+```
+*multiple parameters*
+```javascript
+const add = (a, b) => a + b;
+console.log(add(2, 3));  // Output: 5
+```
+*multiple statements*
+When there are multiple statements, you must use {} and explicitly return a value
+```javascript
+const sum = (a, b) => {
+  const result = a + b;
+  return result;
+};
+console.log(sum(2, 3));  // Output: 5
+```
 
 *Elements:* div (allows you to separate), span (vertical region inside of a span?), h<1-9> headers 1-9, p (paragraph), table, ol, ul (ordered and unordered list), a (anchor the text to a hyperlink), img, &, <, 
 
