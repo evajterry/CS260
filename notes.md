@@ -29,7 +29,19 @@
 
 Make sure to have something that will load quickly be the first thing on the website. 
 
-*Links:* Absolute and relative links. <a href="https://poetryportfolios.click/profiles">
+*Links:* Absolute and relative links. <a 'href="https://poetryportfolios.click/profiles">' 
+'#title {color: blue;}
+'<div class="grid">Content 1</div>'
+'<div class="grid">Content 2</div>'
+'.grid {display: grid;}'
+
+
+## Midterm Notes
+
+**#title vs .grid:** The # selector targets an element with a specific ID, while the .grid (.) selector targets elements with a specific class. 
+Code examples: 
+<h1 id="title">Welcome</h1>
+
 
 *Elements:* div (allows you to separate), span (vertical region inside of a span?), h<1-9> headers 1-9, p (paragraph), table, ol, ul (ordered and unordered list), a (anchor the text to a hyperlink), img, &, <, 
 
